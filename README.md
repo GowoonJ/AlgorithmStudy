@@ -26,10 +26,13 @@
 > 이해 후 다시 풀어야겠다....... :(
 
 ## 3. 정렬 (Sorting)
-주어진 조건에 따라 배열 자르고 정렬하기?
-- sort 라이브러리 이용
-- 오름차순, 내림차순
-- Collection
+1. 선택 정렬(Selection Sort)
+2. 삽입 정렬(Insertion Sort)
+3. 버블 정렬(Bubble Sort)
+4. 합병 정렬(Merge Sort)
+5. 퀵 정렬 (Quick Sort)
+- Collection 이용
+- .sort() 이용
 ---
 ### 1. K번째 수
 프로그래머스 정렬 레벨 1
