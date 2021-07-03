@@ -98,11 +98,15 @@ element를 Queue에 추가
 
 - add(element : E)
 
+  성공 시 return true
+
   실패 시 IllegalStateException 발생
 
 - offer(e: E)
 
   추가 실패했을 때 Exception 발생❌
+
+  return True or False
 
   용량내에 가능할 때만 사용
 
