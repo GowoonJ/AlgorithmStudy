@@ -42,7 +42,7 @@
 
 ## 4. 스택 / 큐
 
-#### 스택(Stack)
+### 스택(Stack)
 
 **LIFO** (후입선출, Last-In-First-Out)
 
@@ -58,7 +58,7 @@
 
 
 
-#### 큐(Queue)
+### 큐(Queue)
 
 **FIFO** (선입선출, First-In-First-Out)
 
@@ -72,3 +72,60 @@
 가장 먼저 들어온 원소 : front
 
 가장 늦게 들어온 원소 : rear
+
+---
+
+**사용 시 import java.util.* 필수**
+
+![img](https://blog.kakaocdn.net/dn/ccrIyV/btqAqhAl9yp/G8oVmTH2EM0xVKU3gfm3eK/img.png)
+
+Queue init 👉 LinkedList
+
+```kotlin
+var queue: Queue<Int> = LinkedList<Int>()
+
+data class Doc(val index : Int, val value : Int)
+var docQueue: Queue<Doc> = LinkedList<Doc>()
+```
+
+
+
+#### 자주 쓰는 메소드
+
+**add element**
+
+element를 Queue에 추가
+
+- add(element : E)
+
+  실패 시 IllegalStateException 발생
+
+- offer(e: E)
+
+  추가 실패했을 때 Exception 발생❌
+
+  용량내에 가능할 때만 사용
+
+**return element**
+
+head의 element Return
+
+element REMOVE ❌
+
+- element()
+
+- peek()
+
+  queue가 비어있으면 **return null**
+
+element **REMOVE** ⭕ 
+
+- poll()
+
+  head의 element return
+
+  queue 비어있으면 **return null**
+
+- remove()
+
+  Exception 발생❌

@@ -26,11 +26,6 @@ class Solution {
            }
         }
         result.add(cnt)
-        val answer = IntArray(result.size)
-        for (i in answer.indices) {
-            answer[i] = result[i]
-        }
-        
         return result.toIntArray()
     }
 }
